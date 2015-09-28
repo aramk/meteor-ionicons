@@ -7,8 +7,10 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.2.0.1');
+  api.addFiles([
+    'src/css/ionicons.css'
+  ], 'client');
   api.addAssets([
-    'src/css/ionicons.css',
     'src/fonts/ionicons.eot',
     'src/fonts/ionicons.svg',
     'src/fonts/ionicons.ttf',
